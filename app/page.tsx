@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 export default function HomePage() {
-  const [products] = useState<Product[]>(productsData as Product[]);
+  const [products] = useState<Product[]>(productsData as unknown as Product[]);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
 
   // Filter sections dynamically from JSON

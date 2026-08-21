@@ -23,7 +23,7 @@ function ProductsContent() {
   const searchParams = useSearchParams();
   const { wishlist } = useCart();
 
-  const [products] = useState<Product[]>(productsData as Product[]);
+  const [products] = useState<Product[]>(productsData as unknown as Product[]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedSubtypes, setSelectedSubtypes] = useState<string[]>([]);
