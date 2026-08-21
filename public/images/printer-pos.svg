@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="printerBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="lidGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="printerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="430" rx="170" ry="24" fill="#0f172a" opacity="0.16" />
+
+  <g filter="url(#printerShadow)" transform="translate(100, 100)">
+    <!-- Base Body -->
+    <rect x="20" y="100" width="260" height="190" rx="16" fill="url(#printerBody)" stroke="#475569" stroke-width="1.5"/>
+    
+    <!-- Top Curved Lid -->
+    <path d="M 30 100 Q 150 70 270 100 L 270 140 L 30 140 Z" fill="url(#lidGrad)" stroke="#334155"/>
+    
+    <!-- Paper Feed Slot -->
+    <rect x="60" y="105" width="180" height="12" rx="4" fill="#020617"/>
+
+    <!-- Printing Receipt Paper Outflow -->
+    <g transform="translate(70, 20)">
+      <path d="M 0 85 L 160 85 L 160 0 L 0 0 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <!-- Zigzag paper tear top -->
+      <polygon points="0,0 15,6 30,0 45,6 60,0 75,6 90,0 105,6 120,0 135,6 150,0 160,4 160,10 0,10" fill="#ffffff"/>
+      
+      <!-- Receipt Printed Lines -->
+      <line x1="20" y1="25" x2="140" y2="25" stroke="#0284c7" stroke-width="3"/>
+      <line x1="20" y1="36" x2="110" y2="36" stroke="#94a3b8" stroke-width="1.5"/>
+      <line x1="20" y1="46" x2="140" y2="46" stroke="#64748b" stroke-width="1.5"/>
+      <line x1="20" y1="56" x2="90" y2="56" stroke="#64748b" stroke-width="1.5"/>
+      <line x1="20" y1="66" x2="140" y2="66" stroke="#0f172a" stroke-width="2"/>
+    </g>
+
+    <!-- Front Controls & Status LEDs -->
+    <circle cx="60" cy="240" r="6" fill="#22c55e" filter="drop-shadow(0 0 6px #22c55e)"/>
+    <text x="75" y="243" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">POWER</text>
+
+    <circle cx="140" cy="240" r="6" fill="#38bdf8" filter="drop-shadow(0 0 6px #38bdf8)"/>
+    <text x="155" y="243" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#94a3b8">READY</text>
+
+    <!-- Feed Button -->
+    <rect x="215" y="225" width="45" height="28" rx="6" fill="#334155" stroke="#475569" stroke-width="1"/>
+    <text x="237" y="242" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#f8fafc" text-anchor="middle">FEED</text>
+
+    <!-- Brand Emblem -->
+    <text x="150" y="190" font-family="system-ui, sans-serif" font-size="14" font-weight="900" fill="#38bdf8" text-anchor="middle" letter-spacing="2">MARIYA</text>
+  </g>
+</svg>

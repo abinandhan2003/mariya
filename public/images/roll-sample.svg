@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sampleBoxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="430" rx="170" ry="22" fill="#0f172a" opacity="0.16" />
+
+  <g filter="url(#boxShadow)" transform="translate(70, 70)">
+    <!-- Sample Box 3D Package -->
+    <!-- Back / inside -->
+    <polygon points="60,180 180,120 300,180 180,240" fill="#cbd5e1" stroke="#94a3b8"/>
+    
+    <!-- Mini sample rolls inside box -->
+    <ellipse cx="140" cy="180" rx="25" ry="35" transform="rotate(-15 140 180)" fill="#ffffff" stroke="#cbd5e1"/>
+    <ellipse cx="140" cy="180" rx="8" ry="12" fill="#0f172a"/>
+
+    <ellipse cx="210" cy="170" rx="25" ry="35" transform="rotate(-15 210 170)" fill="#ffffff" stroke="#cbd5e1"/>
+    <ellipse cx="210" cy="170" rx="8" ry="12" fill="#0f172a"/>
+
+    <ellipse cx="175" cy="140" rx="25" ry="35" transform="rotate(-15 175 140)" fill="#ffffff" stroke="#cbd5e1"/>
+    <ellipse cx="175" cy="140" rx="8" ry="12" fill="#0f172a"/>
+
+    <!-- Front Left Face -->
+    <polygon points="60,180 180,240 180,360 60,300" fill="url(#sampleBoxGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+    
+    <!-- Front Right Face -->
+    <polygon points="180,240 300,180 300,300 180,360" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Premium Sample Pack Seal Badge -->
+    <g transform="translate(180, 240)">
+      <circle cx="0" cy="0" r="45" fill="#0284c7" filter="drop-shadow(0 0 10px #38bdf8)"/>
+      <circle cx="0" cy="0" r="38" fill="#ffffff"/>
+      <circle cx="0" cy="0" r="34" fill="#0284c7"/>
+      <text x="0" y="-8" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">MARIYA</text>
+      <text x="0" y="8" font-family="system-ui, sans-serif" font-size="12" font-weight="900" fill="#facc15" text-anchor="middle">FREE</text>
+      <text x="0" y="22" font-family="system-ui, sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">SAMPLE</text>
+    </g>
+
+    <!-- Side Graphics on Box -->
+    <text x="120" y="300" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0284c7" transform="rotate(27 120 300)">EST. 2011</text>
+    <text x="240" y="300" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#0284c7" transform="rotate(-27 240 300)">QUALITY TESTED</text>
+  </g>
+</svg>

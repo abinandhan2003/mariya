@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scanBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="scanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="430" rx="160" ry="20" fill="#0f172a" opacity="0.16" />
+
+  <g filter="url(#scanGlow)">
+    <!-- Stand Base -->
+    <ellipse cx="230" cy="410" rx="90" ry="25" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <rect x="220" y="240" width="20" height="170" rx="8" fill="#334155"/>
+    <path d="M 200 240 L 260 240 L 250 210 L 210 210 Z" fill="#475569"/>
+
+    <!-- Handheld Scanner Gun (Resting in stand) -->
+    <g transform="translate(180, 70) rotate(15)">
+      <!-- Gun Handle -->
+      <path d="M 50 140 L 20 280 A 15 15 0 0 0 45 295 L 75 280 L 95 140 Z" fill="url(#scanBody)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Trigger button -->
+      <path d="M 25 180 Q 5 190 20 210 L 35 200 Z" fill="#0284c7"/>
+
+      <!-- Gun Head / Optics -->
+      <path d="M 20 140 L 160 90 L 170 140 L 30 170 Z" fill="url(#scanBody)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Front Scanner Window -->
+      <polygon points="160,90 180,105 170,140 150,125" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+      
+      <!-- Top Rubber Cushion -->
+      <path d="M 10 145 Q 90 70 165 92 L 155 105 Q 85 85 20 155 Z" fill="#0284c7"/>
+
+      <!-- Scanning Laser Beam / Projected Target Grid -->
+      <polygon points="180,105 320,50 320,180 170,140" fill="#38bdf8" opacity="0.25"/>
+      <line x1="175" y1="122" x2="310" y2="115" stroke="#ef4444" stroke-width="3" opacity="0.9" filter="drop-shadow(0 0 6px #ef4444)"/>
+    </g>
+  </g>
+</svg>

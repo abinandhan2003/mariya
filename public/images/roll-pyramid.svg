@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pyrRollGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f8fafc"/>
+      <stop offset="85%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="pyrCapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <radialGradient id="pyrCoreGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </radialGradient>
+    <filter id="pyrShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.16"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Contact Shadow -->
+  <ellipse cx="250" cy="430" rx="180" ry="24" fill="#0f172a" opacity="0.10" />
+  <ellipse cx="250" cy="425" rx="130" ry="14" fill="#0284c7" opacity="0.14" />
+
+  <g filter="url(#pyrShadow)">
+    <!-- BOTTOM ROW - LEFT ROLL -->
+    <g transform="translate(130, 290)">
+      <path d="M 0 0 L 120 70 A 30 18 0 0 1 100 110 L -20 40 A 30 18 0 0 1 0 0 Z" fill="url(#pyrRollGrad)"/>
+      <ellipse cx="-5" cy="20" rx="28" ry="38" transform="rotate(-30 -5 20)" fill="url(#pyrCapGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      <ellipse cx="-5" cy="20" rx="9" ry="12" transform="rotate(-30 -5 20)" fill="url(#pyrCoreGrad)"/>
+    </g>
+
+    <!-- BOTTOM ROW - MIDDLE ROLL -->
+    <g transform="translate(190, 255)">
+      <path d="M 0 0 L 120 70 A 30 18 0 0 1 100 110 L -20 40 A 30 18 0 0 1 0 0 Z" fill="url(#pyrRollGrad)"/>
+      <ellipse cx="-5" cy="20" rx="28" ry="38" transform="rotate(-30 -5 20)" fill="url(#pyrCapGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      <ellipse cx="-5" cy="20" rx="9" ry="12" transform="rotate(-30 -5 20)" fill="url(#pyrCoreGrad)"/>
+    </g>
+
+    <!-- MIDDLE ROW - LEFT ROLL -->
+    <g transform="translate(160, 205)">
+      <path d="M 0 0 L 120 70 A 30 18 0 0 1 100 110 L -20 40 A 30 18 0 0 1 0 0 Z" fill="url(#pyrRollGrad)"/>
+      <ellipse cx="-5" cy="20" rx="28" ry="38" transform="rotate(-30 -5 20)" fill="url(#pyrCapGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      <ellipse cx="-5" cy="20" rx="9" ry="12" transform="rotate(-30 -5 20)" fill="url(#pyrCoreGrad)"/>
+    </g>
+
+    <!-- MIDDLE ROW - RIGHT ROLL -->
+    <g transform="translate(220, 170)">
+      <path d="M 0 0 L 120 70 A 30 18 0 0 1 100 110 L -20 40 A 30 18 0 0 1 0 0 Z" fill="url(#pyrRollGrad)"/>
+      <ellipse cx="-5" cy="20" rx="28" ry="38" transform="rotate(-30 -5 20)" fill="url(#pyrCapGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      <ellipse cx="-5" cy="20" rx="9" ry="12" transform="rotate(-30 -5 20)" fill="url(#pyrCoreGrad)"/>
+    </g>
+
+    <!-- TOP APEX ROLL -->
+    <g transform="translate(190, 120)">
+      <path d="M 0 0 L 120 70 A 30 18 0 0 1 100 110 L -20 40 A 30 18 0 0 1 0 0 Z" fill="url(#pyrRollGrad)"/>
+      <ellipse cx="-5" cy="20" rx="28" ry="38" transform="rotate(-30 -5 20)" fill="url(#pyrCapGrad)" stroke="#e2e8f0" stroke-width="1.5"/>
+      <ellipse cx="-5" cy="20" rx="9" ry="12" transform="rotate(-30 -5 20)" fill="url(#pyrCoreGrad)"/>
+    </g>
+
+    <!-- FRONT UNROLLED LEADING PAPER RIBBON WITH LOGO -->
+    <g>
+      <!-- Leading paper flowing forward -->
+      <path d="M 235 125 Q 310 180 345 320 Q 360 380 380 430 L 320 420 Q 305 370 290 320 Q 255 190 200 135 Z" 
+            fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+      
+      <!-- Brand Logo on the front paper trail -->
+      <g transform="translate(325, 360) rotate(15)">
+        <!-- Blue Emblem Circle -->
+        <circle cx="20" cy="18" r="18" fill="#0284c7" />
+        <circle cx="20" cy="18" r="14" fill="#ffffff" />
+        <path d="M 16 11 L 24 11 L 24 25 L 16 25 Z" fill="#0284c7" />
+        <circle cx="20" cy="18" r="4" fill="#f59e0b" />
+        
+        <!-- Text: WIZE PRIME -->
+        <text x="20" y="44" font-family="system-ui, sans-serif" font-size="10" font-weight="900" fill="#0369a1" text-anchor="middle" letter-spacing="1">WIZE</text>
+        <text x="20" y="54" font-family="system-ui, sans-serif" font-size="8" font-weight="800" fill="#0284c7" text-anchor="middle" letter-spacing="0.5">PRIME</text>
+      </g>
+    </g>
+  </g>
+</svg>
